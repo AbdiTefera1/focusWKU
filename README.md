@@ -1,4 +1,4 @@
-# WKU-CSMS-with Material-UI
+# FocusWKU 
 
 ---
 
@@ -27,13 +27,6 @@ npm i react-router-dom sass @mui/material @emotion/react @emotion/styled @mui/ic
 ```sh
 yarn create react-app .
 yard add react-router-dom sass @mui/material @emotion/react @emotion/styled @mui/icons-material @mui/x-data-grid
-```
-```
-[user]
-	name = Abdi Tefera
-	email = abdibj0@gmail.com
-[core]
-	editor = code --wait
 ```
 
 
