@@ -45,7 +45,7 @@ const HomePage = () => {
           </Grid>
           <Grid item xs={12} sm={6}>
             <img
-              src={require("../assets/com.png")}
+              src={require("../assets/focus.jpg")}
               alt="FocusWKU"
               style={{ width: "100%" }}
             />
