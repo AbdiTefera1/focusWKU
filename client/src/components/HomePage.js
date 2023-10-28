@@ -1,5 +1,6 @@
 import { Box, Button, Container, Grid, Grow, Typography } from "@mui/material";
 import { StyledButton } from ".";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -29,7 +30,7 @@ const HomePage = () => {
           <Grid item xs={12} sm={6} gap={3}>
             
               <Typography variant="h1" sx={{ fontSize: "5rem", color: "#fff" }}>
-                Maati FocusWKU ta'a
+                Be focusWKU family
               </Typography>
               <Typography
                 variant="body1"
@@ -40,7 +41,7 @@ const HomePage = () => {
                 molestias sequi ullam
               </Typography>
               {/* <Button sx={{ background: "#33ddff" }}>Maati ta'uuf!</Button> */}
-              <StyledButton> Maati FocusWKU ta'uuf!</StyledButton>
+              <StyledButton><Link to="/auth"> Get Start</Link></StyledButton>
           </Grid>
           <Grid item xs={12} sm={6}>
             <img
