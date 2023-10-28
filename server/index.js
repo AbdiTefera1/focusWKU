@@ -9,8 +9,8 @@ const app = express();
 // app.use(cors());
 app.use(cors(
     {
-        origin: ["https://deploy-mern-frontend.vercel.app"],
-        methods: ["POST", "GET"],
+        origin: ["https://focus-wku-frontend.vercel.app"],
+        methods: ["POST", "GET", "PATCH", "PUT"],
         credentials: true
     }
 ));
