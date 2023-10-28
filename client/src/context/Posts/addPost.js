@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 import axios from "axios";
 
 const PostContext = createContext();
-const url = "http://localhost:8080/focuswku/v1/posts";
+const url = "http://focus-wku-api.vercel.app/focuswku/v1/posts";
 // axios.interceptors.request.use((req) => {});
 
 function PostProvider({ children }) {
