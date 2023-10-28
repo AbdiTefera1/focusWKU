@@ -55,7 +55,7 @@ const NavBar = ({ isLogin, isAdmin = true, isGC}) => {
         <img
           alt="FocusWKU"
           style={styledImage}
-          src={require("../assets/com.png")}
+          src={require("../assets/focus.jpg")}
         />{" "}
         <Typography
           variant="h4"
