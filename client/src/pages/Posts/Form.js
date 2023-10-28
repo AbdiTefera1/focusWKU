@@ -24,7 +24,14 @@ const Form = () => {
     e.preventDefault();
     createPosts(form);
     // handleClear();
+    console.log(form)
   };
+
+  const uploadImage = (e) => {
+    const file = e.target.files[0];
+    const rootPath = URL.createObjectURL(file);
+    setForm({...form, selectedFiles: rootPath })
+  }
 
   const handleClear = () => {
     setForm({
@@ -41,8 +48,12 @@ const Form = () => {
 
   return (
     <div className="container">
+       
+       {/* <img src={this.selectedFiles} width="100px" height="100px"/> */}
       <Paper sx={{ padding: 4, width: "100%" }}>
+        
         <form autoComplete="off" noValidate onSubmit={handleSubmit}>
+        
           <Typography
             variant="h6"
             sx={{
@@ -111,15 +122,16 @@ const Form = () => {
             ></textarea>
           </div>
           <div style={{ marginBottom: "20px", padding: 3 }}>
-            <FileBase
+            {/* <FileBase
               className="filebase"
               type="file"
               name="selectedFiles"
               onDone={({ base64 }) => {
                 
-                setForm({ ...form, selectedFiles: base64  });
+                setForm({ ...form, selectedFiles: base64  });  URL.createObjectURL(file)
               }}
-            />
+            /> */}
+            <input type="file" onChange={uploadImage} multiple/>
             {/* <FileBase
               type="file"
               multiple={false}

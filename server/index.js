@@ -10,8 +10,9 @@ app.use(cors());
 app.use(bodyParser.json({ limit: "32mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "32mb", extended: true }));
 
+const CONNECTION_URL = "mongodb+srv://Abdi:abdiabdi@atlascluster.o1cbn03.mongodb.net/focusWKU";
 
-const CONNECTION_URL = "mongodb://127.0.0.1:27017/focusWKU";
+// const CONNECTION_URL = "mongodb://127.0.0.1:27017/focusWKU";
 const PORT = process.env.PORT || 8080;
 mongoose
   .connect(CONNECTION_URL)
