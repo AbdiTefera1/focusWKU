@@ -6,7 +6,17 @@ const userRouter = require("./routes/userRoutes");
 const postRouter = require("./routes/postRoutes");
 
 const app = express();
-app.use(cors());
+// app.use(cors());
+app.use(cors(
+    {
+        origin: ["https://focus-wku-frontend.vercel.app"],
+        methods: ["POST", "GET", "PATCH", "PUT"],
+        credentials: true
+    }
+));
+app.get("/", (req, res) => {
+    res.json("Hello");
+})
 app.use(bodyParser.json({ limit: "32mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "32mb", extended: true }));
 

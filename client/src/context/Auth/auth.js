@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 import axios from "axios";
 
 const AuthContext = createContext();
-const url = "http://localhost:8080/focuswku/v1/auth";
+const url = "http://focus-wku-api.vercel.app/focuswku/v1/auth";
 // axios.interceptors.request.use((req) => {});
 
 function AuthProvider({ children }) {
